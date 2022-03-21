@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.1.1.min.css" />
+
+    <title>Document</title>
+    <style>
+        .p-card--highlighted {
+            display: flex !important;
+            flex-direction: column;
+            padding: 0;
+        }
+        .p-card__header {
+            border-top: 3px solid #a87ca0;
+            padding: 1rem 1rem 0.5rem;
+            border-bottom: none !important;
+        }
+        .p-card__content {
+            border-top: 1px dotted #d9d9d9;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0 0.5rem;
+            padding: 1rem 0.5rem 0.5rem;
+        }
+
+        .p-card__footer {
+            border-top: 1px dotted #d9d9d9;
+            font-size: .875rem;
+            margin: auto 0.5rem 0;
+            max-width: inherit;
+            padding: 1rem 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="navigation" class="p-navigation is-dark">
+        <div class="p-navigation__row">
+          <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+              <a class="p-navigation__item" href="#">
+                <img class="p-navigation__image" src="https://assets.ubuntu.com/v1/3c7954dd-logo-canonical-white.svg" alt="" width="95">
+              </a>
+            </div>
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">Close menu</a>
+          </div>
+          <nav class="p-navigation__nav" aria-label="Example main navigation">
+            <ul class="p-navigation__items">
+                <li class="p-navigation__item is-selected">
+                    <a class="p-navigation__link" href="#">Blogs</a>
+                  </li>
+              <li class="p-navigation__item">
+                <a class="p-navigation__link" href="#">Products</a>
+              </li>
+              <li class="p-navigation__item">
+                <a class="p-navigation__link" href="#">Services</a>
+              </li>
+              <li class="p-navigation__item">
+                <a class="p-navigation__link" href="#">Partners</a>
+              </li>
+              <li class="p-navigation__item">
+                <a class="p-navigation__link" href="#">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <section style="margin-top: 50px;">
+        <div class="row u-equal-height" id="blog-list-container">
+            
+          </div>
+          
+    </section>
+
+    <script src="./loadBlogs.js"></script>
+</body>
+</html>
